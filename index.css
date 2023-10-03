@@ -81,20 +81,11 @@
     border-bottom: #041c2c solid 1px;
 }
 
-.cont_nav_mobile{
-    display: none;
-}
 
 /* NAV_MOBILE */
 .cont_nav_mobile{
-    display: flex;
-    flex-direction: row;
-    
+    display: none;
 }
-
-
-
-
 
 
 
@@ -105,5 +96,31 @@
     }
     .cont_nav_mobile{
         display: block;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .elements_mobile{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 16%;
+        display: grid;
+        place-items: center;
+        background: #041c2c;
+        clip-path: circle(0% at top left);
+        transition: clip-path .4s;
+    }
+    .items_elements_mobile{
+        list-style: none;
+        color: #fff;
+    }
+
+    .items_elements_mobile:active{
+        clip-path: circle(150% at top left);
     }
 }
